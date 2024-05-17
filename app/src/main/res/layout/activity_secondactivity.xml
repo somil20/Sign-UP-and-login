@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbackground"
+    android:orientation="vertical"
+
+    tools:context=".SignUp">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome,
+                        Sign Up to continue"
+        android:textSize="30dp"
+        android:padding="20dp"
+        android:includeFontPadding="true"
+
+       android:fontFamily="sans-serif"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="347dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:startIconDrawable="@drawable/baseline_person_24"
+        app:helperText="Required"
+        app:helperTextTextColor="#FF0600"
+        android:background="@drawable/greybackground"
+        android:layout_margin="15dp"
+
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/etMail"
+            android:background="@drawable/greybackground"
+            android:hint="        Enter your mail address" />
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:startIconDrawable="@drawable/baseline_person_24"
+        app:helperText="Required"
+        app:helperTextTextColor="#FF0600"
+        android:background="@drawable/greybackground"
+        android:layout_margin="15dp"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/etName"
+            android:background="@drawable/greybackground"
+            android:hint="        Enter your Name" />
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:startIconDrawable="@drawable/baseline_person_24"
+        app:helperText="Required"
+        app:helperTextTextColor="#FF0600"
+        android:background="@drawable/greybackground"
+
+
+        android:layout_margin="15dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:inputType="text"
+            android:id="@+id/etUsername"
+            android:background="@drawable/greybackground"
+            android:hint="       Enter your Username" />
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:startIconDrawable="@drawable/baseline_person_24"
+        app:helperText="Required"
+        app:helperTextTextColor="#FF0600"
+        android:background="@drawable/greybackground"
+        app:endIconMode="password_toggle"
+
+        android:layout_margin="15dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:inputType="text"
+            android:id="@+id/etPassword"
+            android:background="@drawable/greybackground"
+            android:hint="        Enter your Password " />
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/greybackground"
+        android:gravity="center"
+        android:shadowColor="@color/black"
+        android:text="SIGN UP"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/tvsignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:fontFamily="monospace"
+
+        android:textColor="#F4EFEF"
+        android:text="If already Registerd then , Sign IN" />
+
+
+</LinearLayout>
